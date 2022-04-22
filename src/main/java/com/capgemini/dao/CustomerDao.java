@@ -1,5 +1,8 @@
 package com.capgemini.dao;
 
+import java.sql.SQLException;
+import java.util.List;
+
 public interface CustomerDao {
 	public String login(Login login)throws SQLException;
 	public String createCustomer(Customer customer)throws SQLException;
