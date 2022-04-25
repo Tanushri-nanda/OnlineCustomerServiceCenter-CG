@@ -1,6 +1,14 @@
 package com.capgemini.model;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.Digits;
+@Table(name="customer")
 
 public class Customer {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int customerId;
 	private String firstName;
 	private String lastName;
